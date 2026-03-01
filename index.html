@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
+  <title>RoyalMedia Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="login-page">
   <div class="login-box">
-      <input type="password" id="password" placeholder="Enter password" />
-      <button type="button" id="togglePassword" onclick="togglePasswordVisibility()" aria-label="Show password">👁️</button>
+    <img src="assets/logo/photo_5845917606664146073_y.jpg" class="login-logo" alt="RoyalMedia Logo">
+    <input type="password" id="password" placeholder="Enter password" />
+    <button type="button" id="togglePassword" onclick="togglePasswordVisibility()"
+      aria-label="Show password">👁️</button>
     <button onclick="login()">🔐 Login</button>
+    <div class="forgotten-password">
+      <a href="#" onclick="forgottenPassword()">Forgotten password?</a>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
