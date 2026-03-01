@@ -1,7 +1,7 @@
 function login() {
   const password = document.getElementById('password').value;
 
-  if (password === "BigBalls123") { // Updated password
+  if (password === "12345") { // Updated password
     localStorage.setItem("loggedIn", "true");
     window.location.href = "dashboard.html";
   } else {
