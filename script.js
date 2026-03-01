@@ -5,8 +5,16 @@ function login() {
     localStorage.setItem("loggedIn", "true");
     window.location.href = "dashboard.html";
   } else {
-    alert("Incorrect password!");
+    showErrorModal();
   }
+}
+
+function showErrorModal() {
+  document.getElementById('errorModal').style.display = 'flex';
+}
+
+function closeErrorModal() {
+  document.getElementById('errorModal').style.display = 'none';
 }
 
 // Prevent unauthorized access to dashboard

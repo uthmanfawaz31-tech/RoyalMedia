@@ -49,6 +49,90 @@ body.login-page {
   background-color: #ffcc33;
 }
 
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: rgba(26, 26, 26, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: scale(0.8);
+  animation: slideIn 0.3s forwards ease-out;
+}
+
+.modal-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  margin: 0 0 10px;
+  color: #f4b400;
+  font-size: 1.8em;
+}
+
+.modal-content p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.modal-close-btn {
+  background: linear-gradient(135deg, #f4b400, #ffcc33);
+  color: #000;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.modal-close-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(244, 180, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* Dashboard Page Styles */
 body.dashboard {
   background-color: #ffffff;
