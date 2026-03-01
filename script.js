@@ -1,7 +1,7 @@
 function login() {
   const password = document.getElementById('password').value;
 
-  if (password === "1234567890") { // Default password updated
+  if (password === "BigBalls123") { // Updated password
     localStorage.setItem("loggedIn", "true");
     window.location.href = "dashboard.html";
   } else {
@@ -48,12 +48,4 @@ function downloadApp(url) {
 function downloadViaApp(url) {
   // Open the downloader app link in a new tab
   window.open(url, '_blank');
-}
-
-// Forgotten password functionality
-function forgottenPassword() {
-  const email = "uthmanfawaz10@gmail.com";
-  const subject = "Password Reset Request - RoyalMedia";
-  const body = "Hello, I would like to request a new password for my RoyalMedia account.";
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
