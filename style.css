@@ -135,11 +135,27 @@ body.login-page {
 
 /* Dashboard Page Styles */
 body.dashboard {
-  background-color: #ffffff;
-  color: #2C3034;
+  background-color: #0d0d0d;
+  /* Darker modern background */
+  color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 0;
   min-height: 100vh;
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
 }
 
 /* Header */
